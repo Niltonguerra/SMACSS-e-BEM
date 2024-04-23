@@ -1,0 +1,74 @@
+BEM:
+	estrutura para nomear as classes css.
+	
+	bloco
+		.bloco
+	elemento
+		.bloco__elemento
+	modificador
+		.bloco__elemento--modifier
+		
+	exemplo: <button class="button button--large button--primary">Click me</button>
+
+
+SMACSS:
+	estrutura para organizar os arquivos CSS.
+
+	css/
+	│
+	├── base/
+	│   ├── reset.css            # Arquivo de reset CSS
+	│   └── typography.css       # Estilos de tipografia
+	│
+	├── components/
+	│   ├── button/
+	│   │   ├── button.css       # Estilos do componente de botão
+	│   │   └── ...
+	│   ├── navigation/
+	│   │   ├── navigation.css   # Estilos da barra de navegação
+	│   │   └── ...
+	│   └── ...                  # Outros estilos de componentes
+	│
+	├── layout/
+	│   ├── header.css           # Estilos do cabeçalho
+	│   ├── footer.css           # Estilos do rodapé
+	│   ├── sidebar.css          # Estilos da barra lateral
+	│   └── ...                  # Outros estilos de layout
+	│
+	├── pages/
+	│   ├── home.css             # Estilos específicos da página inicial
+	│   ├── about.css            # Estilos específicos da página "Sobre"
+	│   └── ...                  # Outros estilos de páginas
+	│
+	├── themes/
+	│   └── ...                  # Estilos para diferentes temas ou variações
+	│
+	├── utilities/
+	│   ├── mixins.css           # Mixins e funções Sass/Less
+	│   ├── variables.css        # Variáveis de estilo
+	│   └── ...                  # Outros utilitários CSS
+	│
+	└── main.css                 # Arquivo principal de estilos (importa os outros arquivos)
+	
+	
+	
+	regras de nomeação:
+		não use # nas classes.	
+		
+		layout:
+			.l-header ou layout-header
+			
+			
+		module(component):
+			evite usar medidas fixas, como px, prefica vh,vw,% e etc.
+			
+			.module-card ou .card ou .c-card
+		
+		Estado(state):
+			.is-jump ou is-hidden ou has-show ou is-tab-active e etc.
+		
+		Tema(theme):
+			variaveis e outras coisas a mais de ambiente para aplicar temas, como escuro, claro e etc.
+		
+	
+
